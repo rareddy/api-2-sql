@@ -17,11 +17,11 @@ public class CatsController {
 
         i.add(new Cat("Aldo", "Persian Cat", Arrays.asList("silly", "cuddley"),
                 new Owner("Joe", "123 Elm St, Chicago, IL"),
-                Arrays.asList(new Traits("Skittishness"), new Traits("Outgoingness"))));
+                Arrays.asList(new Traits(1, "Skittishness"), new Traits(2, "Outgoingness"))));
 
         i.add(new Cat("Ginger", "Rag Doll", Arrays.asList("curious", "playful"),
                 new Owner("David", "123 Market St, Newyork, NY"),
-                Arrays.asList(new Traits("Dominance"), new Traits("Spontaneity"))));
+                Arrays.asList(new Traits(3, "Dominance"), new Traits(4, "Spontaneity"))));
         return i;
     }
 }

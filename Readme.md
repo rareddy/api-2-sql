@@ -32,13 +32,14 @@ using Teiid JDBC driver and issue a command like
 and you should see tabular results like
 
 ```
-breed                                               moods                                               name                                                owner_address                                       owner_name                                          traits_Traits_trait                                 
-Persian Cat                                         <UnknownType (2,003)>                               Aldo                                                123 Elm St, Chicago, IL                             Joe                                                 Skittishness                                        
-Persian Cat                                         <UnknownType (2,003)>                               Aldo                                                123 Elm St, Chicago, IL                             Joe                                                 Outgoingness                                        
-Rag Doll                                            <UnknownType (2,003)>                               Ginger                                              123 Market St, Newyork, NY                          David                                               Dominance                                           
-Rag Doll                                            <UnknownType (2,003)>                               Ginger                                              123 Market St, Newyork, NY                          David                                               Spontaneity                                         
+breed                                               moods                                               name                                                owner_address                                       owner_name                                          traits_Traits_id  traits_Traits_trait                                 
+ersian Cat                                         <UnknownType (2,003)>                               Aldo                                                123 Elm St, Chicago, IL                             Joe                                                 1                 Skittishness                                        
+Persian Cat                                         <UnknownType (2,003)>                               Aldo                                                123 Elm St, Chicago, IL                             Joe                                                 2                 Outgoingness                                        
+Rag Doll                                            <UnknownType (2,003)>                               Ginger                                              123 Market St, Newyork, NY                          David                                               3                 Dominance                                           
+Rag Doll                                            <UnknownType (2,003)>                               Ginger                                              123 Market St, Newyork, NY                          David                                               4                 Spontaneity                                         
 
 ```
+NOTE: the unknown type above is a array type, and that can be easily read.
 
 Now you can join this table with others just like a relational table. You can also create view called `cats` in the VDB and say
 
